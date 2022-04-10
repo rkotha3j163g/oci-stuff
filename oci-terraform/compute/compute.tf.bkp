@@ -1,0 +1,10 @@
+data "oci_identity_availability_domain" "ad" {
+  compartment_id = var.compartment_ocid
+  ad_number      = 2
+}
+resource "oci_core_instance" "dev_instance1" {
+    availability_domain = data.oci_identity_availability_domain.ad.name
+    compartment_id = var.compartment_ocid
+    shape = "var.instance_shape"
+    subnet_id = "oci_core_subnet.dev_subnet_private1.id"
+}

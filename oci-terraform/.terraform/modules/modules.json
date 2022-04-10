@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"oci_core_instance","Source":"./compute","Dir":"compute"},{"Key":"a_vcn","Source":"./vcn","Dir":"vcn"},{"Key":"compartments","Source":"./compartments","Dir":"compartments"},{"Key":"iam","Source":"./iam","Dir":"iam"},{"Key":"","Source":"","Dir":"."}]}

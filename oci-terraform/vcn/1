@@ -1,0 +1,6 @@
+resource "oci_core_security_list" "test_security_list" {
+    #Required
+    compartment_id = var.compartment_ocid
+    vcn_id = oci_core_virtual_network.base_vcn.id
+    display_name = var.security_list_display_name1
+}

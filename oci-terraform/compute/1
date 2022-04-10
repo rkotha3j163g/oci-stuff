@@ -1,0 +1,9 @@
+variable "instance_shape" {}
+variable "tenancy_ocid" {}
+variable "compartment_ocid" {}
+variable "compute_subnet" {
+  type    = string
+  default = ""
+  description = "default compute_subnet"
+}
+

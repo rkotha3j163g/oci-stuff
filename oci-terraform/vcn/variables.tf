@@ -1,0 +1,12 @@
+variable "tenancy_ocid" {}
+variable "compartment_ocid" {}
+variable "app_tag" {}
+variable "environment" {}
+variable "vcn_cidr" {}
+variable "network_entity_id" {}
+variable "subnet_cidr1" {}
+variable "subnet_cidr2" {}
+variable "subnet_display_name1" {}
+variable "subnet_display_name2" {}
+variable "security_list_display_name1" {}
+variable "security_list_display_name2" {}
