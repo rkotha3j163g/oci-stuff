@@ -1,3 +1,10 @@
+terraform {
+  backend "http" {
+    update_method = "PUT"
+    address       = "https://objectstorage.us-ashburn-1.oraclecloud.com/p/_B9bKmsr0701yTWRZajEU-rR53VG5VnR2KqDJFYkkxdfEXOyWCKMT_Fk8PjE-tRn/n/idtxreryfahq/b/OCI-Dev/o/terraform.tfstate"
+  }
+}
+
 module "compartments" {
   source       = "./compartments"
   tenancy_ocid = "${var.tenancy_ocid}"
